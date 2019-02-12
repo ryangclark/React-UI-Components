@@ -1,0 +1,12 @@
+.calculator-wrapper {
+    display: grid;
+    grid-template-areas:    "display display display display"
+                            "clear clear clear divide"
+                            "digit digit digit multiply"
+                            "digit digit digit subtract"
+                            "digit digit digit add"
+                            "digit digit digit equal";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 124px repeat(5, 100px);
+    width: 400px;
+}

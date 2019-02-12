@@ -1,0 +1,59 @@
+.action-button {
+    align-items: center;
+    background: darkred;
+    border: 1px solid grey;
+    color: white;
+    display: flex;
+    font-weight: lighter;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+#add {
+    grid-area: add;
+}
+
+#clear {
+    background: white;
+    border-left: 2px solid grey;
+    color: black;
+    grid-area: clear;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+.number-button-container {
+    border: 1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-area: digit;
+}
+
+.number-button {
+    align-items: center;
+    border: 1px solid grey;
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.number-button:last-child {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#subtract {
+    grid-area: subtract;
+}
