@@ -1,0 +1,32 @@
+.post-footer {
+    color: grey;
+    display: grid;
+    grid-template-columns: repeat(6, 6rem);
+    margin-top: 2rem;
+    :hover {
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.post-reply {
+    grid-column-start: 2;
+}
+
+.post-retweet {
+    grid-column-start: 3;
+}
+
+.post-favorite {
+    grid-column-start: 4;
+}
+
+.post-direct-message {
+    grid-column-start: 5;
+}
+
+.post-retweet, .post-favorite {
+    i {
+        padding-right: 0.5rem;
+    }
+}
