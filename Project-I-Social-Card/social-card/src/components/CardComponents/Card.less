@@ -1,0 +1,34 @@
+/* All styles for your Card Components live here */
+
+.card-container {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(6, 6rem);
+}
+
+.card-banner, .card-content {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.card-banner {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    max-width: 100%;
+}
+
+.card-content {
+    border: 1px solid lightgray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: none;
+    padding: 0 0.5rem;
+    .page-link-title {
+        font-weight: bold;
+        padding: 1rem 0 0.5rem;
+    }
+    .page-link-simple-url {
+        color: grey;
+        padding: 0.5rem 0 1rem;
+    }
+}

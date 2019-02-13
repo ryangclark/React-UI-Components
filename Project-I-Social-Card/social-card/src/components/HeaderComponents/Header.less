@@ -1,0 +1,43 @@
+/* All styles for your header Components live here */
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(6, 6rem);
+    margin-bottom: 1rem;
+}
+
+.image-thumbnail {
+    grid-column: 1 / span 1;
+    max-width: 100%;
+    padding: 0 0.5rem;
+}
+
+.header-text {
+    grid-column-start: 2;
+    grid-column-end: -1;
+}
+
+.header-content {
+    color: inherit;
+    line-height: 1.25;
+}
+
+.header-title {
+    align-items: center;
+    display: flex;
+    margin: .5rem 0;
+    h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    p {
+        color: grey;
+        font-size: 0.85rem;
+        font-weight: lighter;
+        padding: 0 0.5rem;
+        &.dot {
+            font-size: 0.5rem;
+            padding: 0;
+        }
+    }
+}
